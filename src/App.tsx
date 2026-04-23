@@ -26,12 +26,12 @@ const [active, setActive] = useState("Dashboard");
 
       {/* Sidebar */}
       <div className="w-[240px] bg-[#0d0d0d] border-r border-white/10 p-6">
-        <h2 className="text-xl font-semibold mb-10">Hive Admin</h2>
+        <h2 className="text-xl font-semibold mb-10">Teklearn Admin</h2>
 
         <div className="space-y-5 text-gray-400">
          <p
   onClick={() => setActive("Dashboard")}
-  className={`cursor-pointer ${
+          className={`cursor-pointer font-["Plus_Jakarta_Sans",sans-serif] ${
     active === "Dashboard" ? "text-white" : "text-gray-400"
   }`}
 >
