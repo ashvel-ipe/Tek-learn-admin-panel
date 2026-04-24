@@ -81,7 +81,7 @@ function AdminPanel({
   return (
     <div className="min-h-screen bg-black text-white flex">
       <div className="w-[240px] bg-[#0d0d0d] border-r border-white/10 p-6">
-        <h2 className="text-xl font-semibold mb-10">Hive Admin</h2>
+        <h2 className="text-xl font-semibold mb-10">Teklearn Admin</h2>
 
         <div className="space-y-5 text-gray-400">
           <p
@@ -240,29 +240,41 @@ function AddCourse({
 
   return (
     <div className="bg-[#111] p-6 rounded-2xl border border-white/10">
+      <label htmlFor="course-title" className="block mb-2 text-gray-300">
+        Course Name:
+      </label>
       <input
-        placeholder="Course Title"
+        id="course-title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         className="w-full mb-3 p-3 bg-black rounded-lg"
       />
 
+      <label htmlFor="course-description" className="block mb-2 text-gray-300">
+        Description:
+      </label>
       <input
-        placeholder="Description"
+        id="course-description"
         value={desc}
         onChange={(e) => setDesc(e.target.value)}
         className="w-full mb-3 p-3 bg-black rounded-lg"
       />
 
+      <label htmlFor="course-price" className="block mb-2 text-gray-300">
+        Price:
+      </label>
       <input
-        placeholder="Price"
+        id="course-price"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
         className="w-full mb-3 p-3 bg-black rounded-lg"
       />
 
+      <label htmlFor="course-duration" className="block mb-2 text-gray-300">
+        Duration:
+      </label>
       <input
-        placeholder="Duration"
+        id="course-duration"
         value={duration}
         onChange={(e) => setDuration(e.target.value)}
         className="w-full mb-4 p-3 bg-black rounded-lg"
